@@ -5,32 +5,23 @@ Before doing this an Anax framework must already have been installed as must com
 In the command line type:
 
 <pre><code>
-composer require mittvendornamn/ip-weather-service
+composer require klasse-w/ip-weather-service
 </code></pre>
 
 Having the root of your Anax installation as working directory, type:
 
 <pre><code>
-rsync -av vendor/ditt-vendor-namn/modul/config config/
-rsync -av vendor/ditt-vendor-namn/modul/src src/
-rsync -av vendor/ditt-vendor-namn/modul/test test/
-rsync -av vendor/ditt-vendor-namn/modul/view view/anax/v2/
+rsync -av vendor/klasse-w/ip-weather-service/config config/
+rsync -av vendor/klasse-w/ip-weather-service/src src/
+rsync -av vendor/klasse-w/ip-weather-service/test test/
+rsync -av vendor/klasse-w/ip-weather-service/view view/anax/v2/
 </code></pre>
 
-In *composer.json*
 
-Please add "KW\\": "src/" under autoload, like this
-
-<code><pre>
-"autoload": {
-         "psr-4": {
-             "KW\\": "src/"
-         }
-     },
-</code></pre>
-
-Following services are now available on:
+Following services shall now be available on:
 
 htdocs/ipweb/
+
 htdocs/geotag/
+
 htdocs/weather/
