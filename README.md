@@ -14,6 +14,7 @@ Having the root of your Anax installation as working directory, type:
 rsync -av vendor/klasse-w/ip-weather-service/config ./
 rsync -av vendor/klasse-w/ip-weather-service/src ./
 rsync -av vendor/klasse-w/ip-weather-service/test ./
+
 rsync -av vendor/klasse-w/ip-weather-service/view/geotagip view/anax/v2/
 rsync -av vendor/klasse-w/ip-weather-service/view/ipweb view/anax/v2/
 rsync -av vendor/klasse-w/ip-weather-service/view/weather view/anax/v2/
