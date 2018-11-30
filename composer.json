@@ -1,5 +1,5 @@
 {
-    "name": "KlasseW/ip-weather-service",
+    "name": "klasse-w/ip-weather-service",
     "type": "library",
     "description": "Anax ip and weather service module.",
     "keywords": ["ip", "weather","coordinates"],
