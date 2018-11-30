@@ -23,10 +23,10 @@ Please add "KW\\": "src/" under autoload, like this
 
 <code><pre>
 "autoload": {
-        + "psr-4": {
-            + "KW\\": "src/"
-        + }
-    + },
+         "psr-4": {
+             "KW\\": "src/"
+         }
+     },
 </code></pre>
 
 Following services are now available on:
