@@ -4,7 +4,7 @@
     "description": "Anax ip and weather service module.",
     "keywords": ["ip", "weather","coordinates"],
     "homepage": "",
-    "license": "",
+    "license": "MIT",
     "authors": [
         {
             "name": "Klas Wärnå",
