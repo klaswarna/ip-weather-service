@@ -1,0 +1,33 @@
+{
+    "name": "KlasseW/ip-weather-service",
+    "type": "library",
+    "description": "Anax ip and weather service module.",
+    "keywords": ["ip", "weather","coordinates"],
+    "homepage": "",
+    "license": "",
+    "authors": [
+        {
+            "name": "Klas Wärnå",
+            "email": "klaa17@student.bth.se",
+            "homepage": "",
+            "role": "Developer Student"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Anax\\": "src/",
+            "KW\\": "src/"
+        }
+    },
+    "minimum-stability": "beta",
+    "prefer-stable": true,
+    "require": {
+        "php": ">=7.2",
+        "anax/commons": "^2.0.0@beta"
+    },
+    "require-dev": {
+        "phpmetrics/phpmetrics": "^2",
+        "phpunit/phpunit": "^7",
+        "anax/anax-lite": "^1.0.24"
+    }
+}
