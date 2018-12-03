@@ -35,24 +35,6 @@ class IpGeotagControllerTest extends TestCase
         // Setup the controller
         $this->controller = new \KW\KWcontroller\IpGeotagController();
         $this->controller->setDI($this->di);
-        //$this->controller->initialize();
-
-        /*global $request;
-        $this->request = new \Anax\Request\Request();
-        $this->request->setGlobals(
-            [
-                'server' => [
-                    'REQUEST_SCHEME' => "http",
-                    'HTTPS'       => null, //"on",
-                    'SERVER_NAME' => "dbwebb.se",
-                    'SERVER_PORT' => "80",
-                    'REQUEST_URI' => "/anax-mvc/webroot/app.php",
-                    'SCRIPT_NAME' => "/anax-mvc/webroot/app.php",
-                    'REMOTE_ADDR' => "::1",
-               ]
-           ]
-       );
-       $request = $this->request;*/
     }
 
 
@@ -92,7 +74,13 @@ class IpGeotagControllerTest extends TestCase
      */
     public function testIndexActionPost()
     {
-        $this->di->get("request")->setPost("ipnummer", "132.248.10.7");
+        $this->di->get("request")->setGlobals(
+            [
+                'post' => [
+                    'ipnummer' => "132.248.10.7"
+                ]
+            ]
+        );
         $res = $this->controller->indexActionPost();
         $this->assertInternalType("array", $res);
 
@@ -106,8 +94,13 @@ class IpGeotagControllerTest extends TestCase
      */
     public function testIndexActionPost2()
     {
-        $this->di->get("request")->setPost("ipnummer", "ubåt.123.123.123.123");
-        //$this->di->get("request")->setGet("ipnummer", "123.123.123.123");
+        $this->di->get("request")->setGlobals(
+            [
+                'post' => [
+                    'ipnummer' => "uåt.132.248.10.7"
+                ]
+            ]
+        );
         $res = $this->controller->indexActionPost();
         $this->assertInternalType("array", $res);
 

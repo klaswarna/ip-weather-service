@@ -32,3 +32,28 @@ htdocs/ipweb/
 htdocs/geotag/
 
 htdocs/weather/
+
+Finally please add following code into at the end of your css-file using propriate methods:
+
+<pre><code>
+.lilltabell,
+.lilltabell td,
+.lilltabell tr
+  {
+    border: solid 1px;
+}
+
+.sune {
+    height: 100px;
+    width: 100px;
+}
+
+#mapdiv {
+    height: 500px;
+    width: 500px;
+}
+
+.osynlig {
+    display: none;
+}
+</pre></code>

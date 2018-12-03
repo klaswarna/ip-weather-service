@@ -59,7 +59,14 @@ class IpRestfulControllerTest extends TestCase
     public function testIndexActionPost2()
     {
         //with valid number
-        $this->di->get("request")->setPost("ipnummer", "123.123.123.123");
+        //$this->di->get("request")->setPost("ipnummer", "123.123.123.123");
+        $this->di->get("request")->setGlobals(
+            [
+                'post' => [
+                    'ipnummer' => "123.123.123.123"
+                ]
+            ]
+        );
         //$this->di->get("request")->setGet("ipnummer", "123.123.123.123");
         $res = $this->controller->indexActionPost();
         $this->assertInternalType("array", $res);

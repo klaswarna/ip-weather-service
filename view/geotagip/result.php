@@ -21,8 +21,8 @@ foreach ($res as $key => $value) { ?>
 
 
 <div class="osynlig">
-    <div id="longitude"><?=$res["longitude"]?>pelle</div>
-    <div id="latitude"><?=$res["latitude"]?>balle</div>
+    <div id="longitude"><?=$res["longitude"]?></div>
+    <div id="latitude"><?=$res["latitude"]?></div>
 </div>
 
 <br>
