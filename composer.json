@@ -3,7 +3,6 @@
     "type": "library",
     "description": "Anax ip and weather service module.",
     "keywords": ["ip", "weather","coordinates"],
-    "homepage": "",
     "license": "MIT",
     "authors": [
         {
