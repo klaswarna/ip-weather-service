@@ -6,8 +6,8 @@
  * Return a set of valid paths which should be search for configuration
  * files and directories.
  */
+
 return [
     //ANAX_APP_PATH . "/config",
     ANAX_INSTALL_PATH . "/config",
-    ANAX_INSTALL_PATH . "/test/config",
 ];
