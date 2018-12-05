@@ -1,5 +1,8 @@
 #Installing IP Weather Service as an Anax module
 
+
+[![Build Status](https://travis-ci.org/klaswarna/ip-weather-service.svg?branch=master)](https://travis-ci.org/klaswarna/ip-weather-service)
+
 Before doing this an Anax framework must already have been installed as must composer.
 
 In the command line type:
