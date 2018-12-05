@@ -2,6 +2,9 @@ Installing IP Weather Service as an Anax module
 ======================================================
 
 [![Build Status](https://travis-ci.org/klaswarna/ip-weather-service.svg?branch=master)](https://travis-ci.org/klaswarna/ip-weather-service)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/klaswarna/ip-weather-service/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/klaswarna/ip-weather-service/?branch=master)
+[![Code Coverage](https://scrutinizer-ci.com/g/klaswarna/ip-weather-service/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/klaswarna/ip-weather-service/?branch=master)
+[![Build Status](https://scrutinizer-ci.com/g/klaswarna/ip-weather-service/badges/build.png?b=master)](https://scrutinizer-ci.com/g/klaswarna/ip-weather-service/build-status/master)
 
 Before doing this an Anax framework must already have been installed as must composer.
 
